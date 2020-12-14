@@ -72,8 +72,9 @@ class Bitmap extends Drawable {
 		return h;
 	}
 
-	function set_tile(t) {
+	public function set_tile(t) {
 		if( tile == t ) return t;
+		tile = null;
 		tile = t;
 		onContentChanged();
 		return t;
